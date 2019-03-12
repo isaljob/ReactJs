@@ -4,6 +4,7 @@ import List from './List'
 import Footer from './Footer'
 // import Images from './Images'
 import Top from './Top'
+import Main from './Main'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <p>==============================================</p>
         <Header/>
         <Top/>
+        <Main/>
         <List/>
         <Footer name="Makanan Nusantara" tahun="2019"/>
       </div>
