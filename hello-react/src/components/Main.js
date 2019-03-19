@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import menuMakanan from './lib/Food'
 
 class Main extends Component {
   constructor(props){
@@ -8,24 +9,6 @@ class Main extends Component {
       title2: 'Menu Minuman',
       inputValue: '',
       inputKota: '',
-      menuMakanan: [
-        {
-          nama: 'Mie Ayam',
-          harga: 10000
-        },
-        {
-          nama: 'Bakso',
-          harga: 15000
-        },
-        {
-          nama: 'Mie Ayam Bakso',
-          harga: 20000
-        },
-        {
-          nama: 'Soto',
-          harga: 10000
-        }
-      ]
     }
     this.ubahData = this.ubahData.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -73,7 +56,7 @@ class Main extends Component {
           placeholder="kota"
         />
 
-        {this.state.menuMakanan.map((value, index)=> {
+        {menuMakanan.map((value, index)=> {
           console.log(value);
           console.log(index+1);
           return(

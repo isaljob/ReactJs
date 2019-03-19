@@ -13,9 +13,9 @@ class App extends Component {
         <h1>Hello React JS</h1>
         <p>Ini dibuat dengan React JS</p>
         <p>==============================================</p>
-        <Header/>
+        <Header list="3 Terbaik"/>
         <Top/>
-        <Main/>
+        <Main />
         <List/>
         <Footer name="Makanan Nusantara" tahun="2019"/>
       </div>
